@@ -76,9 +76,35 @@ button:focus{
 }
 
 #passwordOne{
-    margin-right: 12px;   
+    margin-right: 0px;   
 }
 
 #passwordTwo{
     margin-left: 12px;    
+}
+
+.copy-btn{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0px 2px 0px 2px;
+    margin-top: 36px;
+    margin-right: 12px;
+    margin-left: -20px;
+    border-radius: 0px 6px 6px 0px;
+    width: 40px;
+    height: 31px;
+    background: #10B981;
+    cursor: pointer;
+}
+
+.copy-btn:hover{
+    background: #fff;
+    color: #10B981;
+    cursor: pointer;
+}
+
+.copy-btn p{
+    font-size: 15px;
+    color: #1F2937;
 }

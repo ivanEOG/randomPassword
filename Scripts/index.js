@@ -6,6 +6,8 @@ let passTwo = document.getElementById("passwordTwo")
 let countOne = ""
 let countTwo = ""
 let isClicked = false
+let copyFirst=""
+let copySecond=""
 
 function generate(){
     if(isClicked===false){
@@ -17,6 +19,19 @@ function generate(){
         passTwo.textContent = countTwo
     }
     isClicked = true
+    copyFirst = countOne
+    copySecond = countTwo
 }
 
+function copyOne(){
+   
+    navigator.clipboard.writeText(copyFirst)
+    alert("Copied the password: " + copyFirst)
+ }
+ 
+ function copyTwo(){
+    
+     navigator.clipboard.writeText(copySecond)
+     alert("Copied the password: " + copySecond)
+  }
 
